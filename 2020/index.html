@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link href="css/stylesheet.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+  <title>VijayGowdaS - Resume</title>
+</head>
+
+<body id="body">
+
+  <!-- cursor start -->
+  <div class="cursor"></div>
+  <div onclick="topFunction()" id="goTop" title="Go to top">
+    <img src="images/icons/upwards-arrow.svg">
+  </div>
+  <script>
+    const cursor = document.querySelector('.cursor');
+
+    document.addEventListener('mousemove', e => {
+      cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+    })
+
+    // document.addEventListener('click', () => {
+    //   cursor.classList.add("expand");
+
+    //   setTimeout(() => {
+    //     cursor.classList.remove("expand");
+    //   }, 500)
+    // })
+  </script>
+  <!-- cursor end -->
+  <script>
+    // Get the root element
+    var r = document.querySelector(':root');
+    // Create a function for setting a variable value
+    function myFunction_set1() {
+      r.style.setProperty('--primary', '#FCC419');
+      r.style.setProperty('--primaryLight', '#FFF9DB');
+      r.style.setProperty('--primarytext', '#212529');
+      r.style.setProperty('--myInfo', 'url(../images/myInfo.png)');
+    }
+    function myFunction_set2() {
+      r.style.setProperty('--primary', '#FF5073');
+      r.style.setProperty('--primaryLight', '#FFEDF1');
+      r.style.setProperty('--primarytext', '#212529');
+    }
+    function myFunction_set3() {
+      r.style.setProperty('--primary', '#6666CC');
+      r.style.setProperty('--primaryLight', '#EFEFFA');
+      r.style.setProperty('--primarytext', '#212529');
+      r.style.setProperty('--myInfo', 'url(../images/myInfo2.png)');
+    }
+    function myFunction_set4() {
+      r.style.setProperty('--primary', '#00C8D2');
+      r.style.setProperty('--primaryLight', '#E5FAFB');
+      r.style.setProperty('--primarytext', '#212529');
+    }
+    function myFunction_set5() {
+      r.style.setProperty('--primary', 'black');
+      r.style.setProperty('--primarytext', 'white');
+    }
+  </script>
+  <!-- scroll start -->
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("goTop");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "flex";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- scroll end -->
+  <div class="theme">
+    <div onclick="myFunction_set1()" style="background-color: #FCC419"></div>
+    <div onclick="myFunction_set2()" style="background-color: #FF5073"></div>
+    <div onclick="myFunction_set3()" style="background-color: #6666CC"></div>
+    <div onclick="myFunction_set4()" style="background-color: #00C8D2"></div>
+    <div onclick="myFunction_set5()" style="background-color: #000000"></div>
+  </div>
+
+  <div class="hero" id="home">
+    <div class="content">
+      <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <!-- <a class="navbar-brand logo" href="#">{ vijay.designer }</a> -->
+            <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+              aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
+                <li class="nav-item"> <a class="nav-link" href="#home">Home</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#about">About</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#how">How</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#what">What</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#experience">Experience</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="https://api.whatsapp.com/send?phone=9742034560"
+                    target="new"><img src="images/icons/speak.svg" width="40px"></a> </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="wrapBody">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h2>Hello, I'm <span class="font-black text-bg">Vijay Gowda S</span></h2>
+              <h1 class="font-black text-bg mt-3">UX-UI Designer</h1>
+              <p>Current role Product Lead - UI/UX</p>
+              <div class="download">Download CV</div>
+            </div>
+            <div class="col-md-6 text-end">
+              <img src="images/bgImage.PNG" class="imageBG img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="mouse"><img src="images/icons/scroll.svg"></div> -->
+  </div>
+
+  <div class="aboutMe" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center">
+          <div class="myInfo"></div>
+          <!-- <img src="images/myInfo.png" class="img-fluid mb-5"> -->
+          <p class="text-yellowPrimary">My Interests</p>
+          <div class="d-flex justify-content-center">
+            <div class="faspan"><i class="fa fa-gamepad"></i></div>
+            <!-- <div class="faspan"><i class="fa fa-music"></i></div> -->
+            <div class="faspan"><i class="fa fa-plane"></i></div>
+            <div class="faspan"><i class="fa fa-film"></i></div>
+            <div class="faspan"><i class="fa fa-coffee"></i></div>
+            <div class="faspan"><i class="fa fa-car"></i></div>
+            <!-- <div class="faspan"><i class="fa fa-bicycle"></i></div> -->
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p class="text-yellowPrimary">My Intro</p>
+          <h1>About Me</h1>
+          <p>I'm Vijay Gowda, a web designer and a front end developer. I’m constantly learning about latest and best
+            web technologies and other design related topics, currently playing around with Angular. Some of my skills
+            include: HTML5, CSS3, SCSS, Responsive Web Design Bootstrap, Photoshop, basic knowledge of Javascript &
+            jQuery.</p>
+
+          <table class="table">
+            <tr>
+              <td>Name</td>
+              <td>:</td>
+              <td>Vijay Gowda S</td>
+            </tr>
+            <tr>
+              <td>Phone</td>
+              <td>:</td>
+              <td>+91 9742034560</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>:</td>
+              <td>vijaygowdas@icloud.com</td>
+            </tr>
+            <tr>
+              <td>Location</td>
+              <td>:</td>
+              <td>Bangalore</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="howIWork" id="how">
+    <div class="container">
+      <p class="text-yellowPrimary">How I Work</p>
+      <h1 class="mb-0">Design Process</h1>
+      <div class="row">
+        <div class="col-12 mb-5">
+          It always starts with a pencil and paper, scribbling ideas and concepts, thinking about the problem and the
+          solution.
+        </div>
+        <div class="col-md-3">
+          <div class="howIcons">
+            <img src="images/icons/magnifying-glass.svg">
+          </div>
+          <h4>Research</h4>
+          <ul>
+            <li>User Goals</li>
+            <li>Challenges</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <div class="howIcons">
+            <img src="images/icons/pen.svg">
+          </div>
+          <h4>Create</h4>
+          <ul>
+            <!-- <li>Workflows</li> -->
+            <li>Wireframes</li>
+            <li>Prototypes</li>
+            <!-- <li>Branding</li> -->
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <div class="howIcons">
+            <img src="images/icons/approval.svg">
+          </div>
+          <h4>Test</h4>
+          <ul>
+            <li>Usability</li>
+            <!-- <li>Review metrics</li> -->
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <div class="howIcons">
+            <img src="images/icons/web-development.svg">
+          </div>
+          <h4>Develop</h4>
+          <ul>
+            <li>HTML & CSS</li>
+            <li>Implementation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="whatIKnow" id="what">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <p class="text-yellowPrimary">What I Know</p>
+          <h1>Skills</h1>
+        </div>
+        <div class="col-md-8">
+          <div class="services-text">HTML5</div>
+          <div class="services-text">CSS</div>
+          <div class="services-text">SCSS / SASS</div>
+          <div class="services-text">Responsive Web Design</div>
+          <div class="services-text">Bootstrap 4 & 5</div>
+          <div class="services-text">Ionic Html Tags</div>
+          <div class="services-text">Pencil Project</div>
+          <div class="services-text">Adobe Photoshop</div>
+          <div class="services-text">Adobe Illustrator</div>
+          <div class="services-text">Adobe XD</div>
+          <div class="services-text">Basic knowledge of JavaScript & jQuery</div>
+          <div class="services-text">Learning Angular</div>
+          <!-- <div class="services-text"></div> -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="journey" id="experience">
+    <div class="container">
+      <p class="text-yellowPrimary">Experience</p>
+      <h1 class="mb-5">Awesome journey</h1>
+
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="journeyContent">
+            <p>KPISOFT</p>
+            <p>Product Lead - UI/UX</p>
+            <p>July 2017 - Present</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="journeyContent">
+            <p>Logisoftware Inc / Logiware Inc</p>
+            <p>Senior Web Designer</p>
+            <p>November 2014 - July 2017</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="journeyContent">
+            <p>SOGO Computer</p>
+            <p>Web Designer</p>
+            <p>June 2013 - November 2014</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="journeyContent">
+            <p>Roma ThinkSoft</p>
+            <p>Web Designer</p>
+            <p>December 2012 - June 2013</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="journeyContent">
+            <p>Portalab</p>
+            <p>Web Designer</p>
+            <p>August 2011 - November 2012</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="thankYou">
+    <div class="textOne">Thank You</div>
+    <div class="textTwo">Thank You</div>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

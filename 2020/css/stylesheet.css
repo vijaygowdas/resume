@@ -1,0 +1,315 @@
+/* 4,8,12,16,20,24,28,32,36,40,44,48,52,56,60 */
+:root {
+  --primary: #FCC419;
+  --primaryLight: #FFF9DB;
+  --primarytext: #212529;
+  --myInfo: url(../images/myInfo.png);
+}
+
+@font-face {
+  font-family: Poppins-Black;
+  src: url(../fonts/Poppins/Poppins-Black.ttf);
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+body {
+  font-family: Poppins-Regular;
+  color: var(--primarytext);
+  overflow-x: hidden;
+}
+
+.font-black {
+  font-family: Poppins-Black;
+}
+
+.text-bg {
+  background-color: var(--primaryLight);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 20px;
+}
+
+.text-yellowPrimary {
+  color: var(--primary);
+}
+
+.faspan {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 100%;
+  margin: 0px 8px;
+  color: var(--primary);
+}
+
+.hero .content {
+  border-radius: 24px;
+}
+
+.hero .content .header {
+  padding: 16px;
+}
+
+.hero .content .header .navbar .navbar-brand.logo {
+  background-color: var(--primary);
+  height: 40px;
+  padding: 0px;
+  padding-left: 12px;
+  padding-right: 12px;
+  line-height: 40px;
+  border-radius: 8px;
+}
+
+.hero .content .wrapBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px 0px 120px 0px;
+}
+
+.hero .content .wrapBody .imageBG {
+  background-color: #fff;
+}
+
+.aboutMe {
+  background-color: var(--primaryLight);
+  padding: 80px 0px;
+}
+
+.howIWork {
+  padding: 80px 0px;
+}
+
+.howIWork .howIcons {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 100%;
+  border: solid 2px #212529;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.howIWork .howIcons::after {
+  content: " ";
+  position: absolute;
+  border: dashed 1px #000;
+  width: 100px;
+  left: 40px;
+}
+
+.howIWork .howIcons img {
+  width: 20px;
+  height: 20px;
+}
+
+.whatIKnow {
+  padding: 80px 0px;
+  background-color: #f8f9fa;
+}
+
+.whatIKnow .services-text {
+  display: inline-block;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  padding: 12px 24px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(102, 95, 130, 0.15);
+  border-radius: 40px;
+}
+
+.journey {
+  padding: 80px 0px;
+}
+
+.journey .col-md-4 {
+  padding: 8px;
+}
+
+.journey .journeyContent {
+  display: inline-block;
+  margin: 16px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  width: -webkit-fill-available;
+  position: relative;
+  border: solid 4px var(--primaryLight);
+}
+
+.journey .journeyContent::before {
+  content: " ";
+  position: absolute;
+  background-image: url(../images/icons/briefcase.svg);
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}
+
+.journey .journeyContent p {
+  margin: 0px;
+}
+
+.journey .journeyContent p:first-child {
+  margin-left: 36px;
+  margin-bottom: 8px;
+}
+
+.cursor {
+  width: 8px;
+  height: 8px;
+  background-color: #6666CC;
+  border-radius: 100%;
+  position: absolute;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-animation: cursorAnim .5s infinite alternate;
+          animation: cursorAnim .5s infinite alternate;
+  pointer-events: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.theme {
+  z-index: 99;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border: solid 2px var(--primary);
+  padding: 8px 12px;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.theme div {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.theme div:last-child {
+  margin: 0px;
+}
+
+#goTop {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 16px;
+  z-index: 99;
+  cursor: pointer;
+  background-color: white;
+  width: 36px;
+  height: 36px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16), 0 4px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16), 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+#goTop img {
+  width: 16px;
+}
+
+.thankYou {
+  background-color: #f8f9fa;
+  text-align: center;
+  position: relative;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.thankYou .textOne {
+  position: absolute;
+  font-family: Poppins-Black;
+  font-size: 100px;
+  opacity: 0.08;
+}
+
+.thankYou .textTwo {
+  position: relative;
+  font-size: 50px;
+  line-height: 50px;
+  border-bottom: solid 4px var(--primary);
+  top: 18px;
+  opacity: 0.8;
+}
+
+.download {
+  border: solid 4px var(--primary);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 60px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.myInfo {
+  background-image: var(--myInfo);
+  width: 300px;
+  height: 300px;
+  margin: 0px auto;
+  margin-bottom: 40px;
+}
+/*# sourceMappingURL=stylesheet.css.map */
